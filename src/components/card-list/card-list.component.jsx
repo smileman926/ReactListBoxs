@@ -5,7 +5,10 @@ export const CardList = (props) => (
     <div className="card-list">
         {
         props.monsters.map(monster=>(
+            <div>
+          
             <Card key={monster.id} monster={monster}/>
+            </div>
         ))
         }
     </div>
